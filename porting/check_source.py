@@ -16,8 +16,11 @@ def main() -> int:
         "kernel/xiaomi/sdm710/Makefile": "existing Linux 4.9 kernel",
         "hardware/xiaomi": "Xiaomi hardware modules",
         "hardware/qcom-caf/common/common.mk": "Qualcomm CAF common framework",
-        "hardware/qcom-caf/sdm845": "legacy Qualcomm SDM845 hardware modules",
-        "device/qcom/sepolicy_vndr/SEPolicy.mk": "Qualcomm vendor SELinux policy",
+        "hardware/qcom-caf/sdm845/audio": "legacy Qualcomm audio HAL",
+        "hardware/qcom-caf/sdm845/display": "legacy Qualcomm display HAL",
+        "hardware/qcom-caf/sdm845/media": "legacy Qualcomm media HAL",
+        "device/qcom/sepolicy/SEPolicy.mk": "Qualcomm platform SELinux policy",
+        "device/qcom/sepolicy_vndr/legacy-um/SEPolicy.mk": "Qualcomm legacy vendor SELinux policy",
     }
     missing = []
     for rel, label in required.items():
