@@ -21,6 +21,12 @@ def main() -> int:
         "hardware/qcom-caf/sdm845/media": "legacy Qualcomm media HAL",
         "device/qcom/sepolicy/SEPolicy.mk": "Qualcomm platform SELinux policy",
         "device/qcom/sepolicy_vndr/legacy-um/SEPolicy.mk": "Qualcomm legacy vendor SELinux policy",
+        "hardware/qcom-caf/wlan": "Qualcomm CAF WLAN module namespace",
+        "vendor/qcom/opensource/usb/etc": "Qualcomm USB settings",
+        "vendor/qcom/opensource/dataservices": "Qualcomm data services",
+        "vendor/qcom/opensource/display": "Qualcomm display compatibility source",
+        "vendor/qcom/opensource/commonsys/display": "Qualcomm commonsys display",
+        "vendor/qcom/opensource/commonsys-intf/display": "Qualcomm commonsys display interfaces",
     }
     missing = []
     for rel, label in required.items():
